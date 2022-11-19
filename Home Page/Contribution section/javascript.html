@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Form Validation Contribution form</title>
+    <meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+    <meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+    <link rel='stylesheet' href='style.css' type='text/css' />
+    <script type="text/javascript" src="validation.js"></script>
+
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <h1>Contribution Form !!!!</h1>
+    <p>
+        NOTE:-Please enter valide information........<br> when your data get evaluated then you will gate massage on your entered Email id
+    </p>
+    Use tab keys to move from one input field to the next.
+    <form name='registration' onSubmit="return formValidation();" action="DbConnection.php" method="POST">
+        <ul>
+            <li><label for="userid"><b style="color: red;">*</b>  User id:</label></li>
+            <li><input type="text" name="userid" size="12" /></li>
+
+            <li><label for="passid"><b style="color: red;">*</b>  Password:</label></li>
+            <li><input type="password" name="passid" size="12" /></li>
+
+            <li><label for="username"><b style="color: red;">*</b> Name:</label></li>
+            <li><input type="text" name="username" size="50" /></li>
+
+            <li><label for="pnone">Phone_No:</label></li>
+            <li><input type="text" name="phone" size="50" placeholder="Optional" /></li>
+
+            <li><label for="address"><b style="color: red;">*</b> Address:</label></li>
+            <li><input type="text" name="address" size="50" placeholder="home_no,city,dist,state" /></li>
+
+            <li><label for="country"><b style="color: red;">*</b> Country:</label></li>
+            <li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+<option value="AE">Other</option>
+</select></li>
+
+            <li><label for="zip"><b style="color: red;">*</b> ZIP Code:</label></li>
+            <li><input type="text" name="zip" /></li>
+
+            <li><label for="email"><b style="color: red;">*</b> Email:</label></li>
+            <li><input type="text" name="email" size="50" /></li>
+
+            <li><label id="gender"><b style="color: red;">*</b> Gender:</label></li>
+            <li><input type="radio" name="genderr" value="Male" /><span>Male</span></li>
+            <li><input type="radio" name="gender" value="Female" /><span>Female</span></li>
+
+            <li><label for="point"><b style="color: red;">*</b> Point:</label></li>
+            <li><select name="point">
+<option selected="" value="Default">(select a point)</option>
+<option value="bF">Let's Friendly with covid-19/histroy</option>
+<option value="cF">Let's Friendly with covid-19/symptom</option>
+<option value="dF">Let's Friendly with covid-19/precution</option>
+<option value="gL">Impact on Education</option>
+<option value="sZ"> Impact On Industry</option>
+<option value="ab">Impact On Farmers</option>
+<option value="cd"> Impact On Science and Technology</option>
+<option value="As"> Impact On Indian Economy</option>
+<option value="nm"> Impact On Security</option>
+<option value="ts"> Impact On Transportation</option>
+<option value="rq"> Impact On Different Contries</option>
+<option value="mn">  Impact On Environment & Tourism</option>
+</select></li>
+
+            <li><label><b style="color: red;">*</b> Language:</label></li>
+            <li><input type="checkbox" name="english" value="en" checked /><span>English</span></li>
+            <li><input type="checkbox" name="english" value="noen" /><span>Non English</span></li>
+
+            <li><label for="desc"><b style="color: red;">*</b> Add Point:</label></li>
+            <li><textarea name="descr" id="desc" placeholder="Write here your point description which you want to add"></textarea></li>
+            <li><input type="submit" name="submit" value="Submit" /></li>
+        </ul>
+    </form>
+
+</body>
+
+</html>
