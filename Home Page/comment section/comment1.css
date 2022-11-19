@@ -1,0 +1,79 @@
+body {
+    background-image: url(home\ first.jpeg );
+    height: 100vh;
+    padding-top: auto;
+    background-repeat: no-repeat;
+    padding: 12em 0;
+    color: rgb(19, 18, 18);
+    background-size: cover;
+    background-position: center;
+    /*  background-color:rgb(146, 229, 143);*/
+}
+
+.comment-box {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.comment-box h2 {
+    background-color: rgb(160, 214, 240);
+    color: rgb(16, 75, 29);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.comment-box input {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+
+.comment-box input :focus {
+    border: 1px solid#000;
+    outline: 0;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+
+.comment-box textarea :focus {
+    border: 1px solid #000;
+    outline: 0;
+}
+
+
+/*.comment-box button{
+    border: 0;
+    padding: 10px 30px;
+    background: #86b0b6;
+    font-size: 18px;
+    border-radius:5px ;
+    color: #fff;
+}*/
+
+.button2-dark {
+    padding: 5em 1.75em;
+    font-size: 7em;
+    font-weight: 500;
+    color: #683d3d;
+    background-color: rgb(171, 230, 245);
+    border-color: #8ebae6;
+}
+
+.button2-dark:hover,
+.button2-dark:focus {
+    background: #131311;
+    color: #14f014;
+}
